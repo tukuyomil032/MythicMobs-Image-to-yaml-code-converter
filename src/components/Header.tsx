@@ -2,8 +2,8 @@ export const Header = () => (
   <header className="app-header">
     <div className="logo-frame">
       <img 
-        src="/mythiccraft-logo.jpg" 
-        alt="MythicCraft Logo" 
+        src="logo.png" 
+        alt="App Logo" 
         className="logo-image" 
       />
     </div>
