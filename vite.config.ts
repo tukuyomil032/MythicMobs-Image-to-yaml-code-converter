@@ -8,7 +8,7 @@ export default defineConfig({
   // ▼▼▼ GitHub Pagesのためにこの設定を追加 ▼▼▼
   // 'YOUR_REPOSITORY_NAME' の部分を、あなたのGitHubリポジトリ名に書き換えてください。
   // (例: 'https://YourName.github.io/mm-image-converter/' のようにするため)
-  base: '/YOUR_REPOSITORY_NAME/', 
+  base: 'MythicMobs-Image-to-yaml-code-converter', 
   // ▲▲▲ GitHub Pagesのためにこの設定を追加 ▲▲▲
 })
 
