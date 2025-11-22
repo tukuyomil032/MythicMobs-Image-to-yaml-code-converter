@@ -27,8 +27,8 @@ It utilizes MythicMobs' [“Particle Mechanism”](https://git.mythiccraft.io/my
 
 ## Result
 
-✅️ The output result will appear in “Generated MythicMobs YAML”.
-✅️ Press “COPY TO CLIPBOARD” to copy it to your clipboard.
+- ✅️ The output result will appear in “Generated MythicMobs YAML”.
+- ✅️ Press “COPY TO CLIPBOARD” to copy it to your clipboard.
 
 
 ## :warning:Important Notes:warning:
