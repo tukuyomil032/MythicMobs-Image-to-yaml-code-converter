@@ -1,73 +1,44 @@
-# React + TypeScript + Vite
+# MythicMobs - Image to YAML Code Converter
+:ballot_box_with_check: This tool enables more advanced development using the Minecraft plugin “MythicMobs”.
+It utilizes MythicMobs' [“Particle Mechanism”](https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/skills/mechanics/Particle) to generate code that recreates your uploaded images within the game.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technology Stacks
 
-## React Compiler
+- React 19
+- Node.js 23.4.0
+- TypeScript
+- Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+# How to Use
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Access this project's [GitHub Pages](https://tukuyomil032.github.io/MythicMobs-Image-to-yaml-code-converter/)
+2. Upload your desired image
+3. Set the skill name you want to use for the generated code (skill).
+4. Set the resolution. (Determines particle placement frequency)
+5. Set the in-game display size. (How many Minecraft blocks the entire image width corresponds to)
+6. Set the transparency threshold. (Only pixels more opaque than this value will have particles placed)
+7. Set the maximum particle count. (The particle mechanic will not be used beyond this value)
+8. Set the particle type. (The particle type used to recreate the image)
+9. Press “GENERATE YAML CODE”
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Result
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✅️ The output result will appear in “Generated MythicMobs YAML”.
+✅️ Press “COPY TO CLIPBOARD” to copy it to your clipboard.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## :warning:Important Notes:warning:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Set the “Maximum Particle Count” value with extreme caution. 
+**Excessively high values may cause the game or Minecraft server to crash.**
+- Your uploaded image will appear in the “Image Preview”.
+
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
